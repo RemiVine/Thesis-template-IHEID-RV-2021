@@ -41,6 +41,8 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
 - **Personnal information, discipline, *etc.*** 
    - *information_to_fill.tex* contains all the personnal information that should be changed for the specimen 
    - make sure the year is the correct one (if pre-defense and post-defense submissions at different years)
+   - the thesis number will be given by the administration
+   - the imprimatur will be given by the administration after the defense
  
  ## Changes that can be done 
 
