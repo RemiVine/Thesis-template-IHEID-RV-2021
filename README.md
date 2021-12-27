@@ -5,34 +5,35 @@ The template allows to have a thesis with independent chapters, containing their
 
 The use of this template shall be rather intuitive. The folder "Chapter" is meant to include the main.tex document, one by one, of your thesis. The respective bibliographies are to be inserted in the "Bibliography" folder.
 
+There is one bibliography per paper and only the referred documents are displayed in the bibliography. I chose the "Chicago" style, you can change that in the "BIBLIOGRAHPY" part of the "packages.tex" file (the *ad hoc* *\stylechoice* command).
 
-There is one bibliography per paper and only the referred documents are displayed in the bibliography.
+Every chapter contains its own appendix. The appendix must be put within *\begin{subappendices}* ... *\end{subappendices}*
 
-The folder contains:
+## The folder contains:
  
  
- Bibliographies
-  preable.bib
-  paper1.bib
-  ...
- Chapters
-  0_Abstract_Page.tex
-  0_Acknowledgments.tex
-  0_pre_thesis_quote_dedication_etc.tex
-  Paper1.tex
-  ...
-  Preambe.tex
- Editing
-  specimen.tex
-  glossary.tex
-  information_to_fill.tex
-  logo.png
-  packages.tex
- graphs_and_pictures
-  Waldseemuller_map.jpg
-  ...
- IMPRIMATUR.pdf
- main.tex 
+ - Bibliographies
+  - preamble.bib
+  - paper1.bib
+ - ...
+ - Chapters
+  - 0_Abstract_Page.tex
+  - 0_Acknowledgments.tex
+  - 0_pre_thesis_quote_dedication_etc.tex
+  - Paper1.tex
+  - ...
+  - Preambe.tex
+- Editing
+ - specimen.tex
+ - glossary.tex
+ - information_to_fill.tex
+ - logo.png
+ - packages.tex
+- graphs_and_pictures
+ - Waldseemuller_map.jpg
+ - ...
+- IMPRIMATUR.pdf
+- main.tex 
  
  
  
