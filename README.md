@@ -40,10 +40,14 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
  
 - Personnal information
    - *information_to_fill.tex* contains all the personnal information that should be changed for the specimen 
-
+   - make sure the year is the correct one (if pre-defense and post-defense submissions at different years)
  
  ## Changes that can be done 
 
+- Font size  &rarr;   directly in the *main.tex*
+- Margins   &rarr;    in the *packages.tex*
+- Hyperlink color   &rarr;    in the *packages.tex*
+- Bibliography style    &rarr;   in the *packages.tex*
 
 
 
