@@ -7,7 +7,7 @@ The use of this template shall be rather intuitive. The folder "Chapter" is mean
 
 There is one bibliography per paper and only the referred documents are displayed in the bibliography. I chose the "Chicago" style, you can change that in the "BIBLIOGRAHPY" part of the "packages.tex" file (the *ad hoc* *\stylechoice* command).
 
-| :warning:          | Every chapter contains its own appendix. The appendix must be put within *\begin{subappendices}* ... *\end{subappendices}*
+:warning:          Every chapter contains its own appendix. The appendix must be put within *\begin{subappendices}* ... *\end{subappendices}*
 
 ## The folder contains:
  
