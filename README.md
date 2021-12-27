@@ -17,26 +17,32 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
      - paper1.bib
      - ...
  - Chapters
-     - 0_Abstract_Page.tex
-     - 0_Acknowledgments.tex
-     - 0_pre_thesis_quote_dedication_etc.tex
+     - 0_Abstract_Page.tex    &rarr;   this is required as the last page of the specimen
+     - 0_Acknowledgments.tex   &rarr;   *optional*
+     - 0_pre_thesis_quote_dedication_etc.tex    &rarr;   *optional*
      - Paper1.tex
      - ...
-     - Preambe.tex
+     - Preamble.tex
 - Editing
-     - specimen.tex
-     - glossary.tex
-     - information_to_fill.tex
-     - logo.png
-     - packages.tex
+     - specimen.tex    &rarr; IHEID-specific template for the first 6 pages
+     - glossary.tex    &rarr; can be used for listing abbreviations (or to do a glossary, more on the file) 
+     - information_to_fill.tex   &rarr;  must complete these information to fill the specimen
+     - logo.png        &rarr; IHEID logo (to adapt if changed...)
+     - packages.tex    &rarr; I add put the packages that were useful to me
 - graphs_and_pictures
      - Waldseemuller_map.jpg
      - ...
-- IMPRIMATUR.pdf
+- IMPRIMATUR.pdf    &rarr;   must change this with the document the IHEID will provide you with once the defense done
 - main.tex 
  
  
+ ## Some changes to be done
  
+- Personnal information
+   - * information_to_fill.tex * contains all the personnal information that should be changed for the specimen 
+
+ 
+ ## Changes that can be done 
 
 
 
