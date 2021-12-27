@@ -17,21 +17,21 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
      - paper1.bib
  - ...
  - Chapters
-  - 0_Abstract_Page.tex
-  - 0_Acknowledgments.tex
-  - 0_pre_thesis_quote_dedication_etc.tex
-  - Paper1.tex
-  - ...
-  - Preambe.tex
+     - 0_Abstract_Page.tex
+     - 0_Acknowledgments.tex
+     - 0_pre_thesis_quote_dedication_etc.tex
+     - Paper1.tex
+     - ...
+     - Preambe.tex
 - Editing
- - specimen.tex
- - glossary.tex
- - information_to_fill.tex
- - logo.png
- - packages.tex
+     - specimen.tex
+     - glossary.tex
+     - information_to_fill.tex
+     - logo.png
+     - packages.tex
 - graphs_and_pictures
- - Waldseemuller_map.jpg
- - ...
+     - Waldseemuller_map.jpg
+     - ...
 - IMPRIMATUR.pdf
 - main.tex 
  
