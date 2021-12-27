@@ -45,6 +45,7 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
  ## Changes that can be done 
 
 - Font size  &rarr;   directly in the *main.tex*
+- Include or not table of contents, list of figures, list of tables, list of abbreviations    &rarr;   directly in the *main.tex* 
 - Margins   &rarr;    in the *packages.tex*
 - Hyperlink color   &rarr;    in the *packages.tex*
 - Bibliography style    &rarr;   in the *packages.tex*
