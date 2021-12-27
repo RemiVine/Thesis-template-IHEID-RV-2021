@@ -48,6 +48,7 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
 - Margins   &rarr;    in the *packages.tex*
 - Hyperlink color   &rarr;    in the *packages.tex*
 - Bibliography style    &rarr;   in the *packages.tex*
+- Font type &rarr; can be changed if using a different compiler
 
 
 
