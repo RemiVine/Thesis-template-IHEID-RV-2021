@@ -6,6 +6,8 @@ The template allows to have a thesis with independent chapters, containing their
 The use of this template shall be rather intuitive. The folder "Chapter" is meant to include the main.tex document, one by one, of your thesis. The respective bibliographies are to be inserted in the "Bibliography" folder.
 
 
+There is one bibliography per paper and only the referred documents are displayed in the bibliography.
+
 The folder contains:
  
  
