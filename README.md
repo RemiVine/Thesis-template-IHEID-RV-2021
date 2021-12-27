@@ -15,7 +15,7 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
  - Bibliographies
      - preamble.bib
      - paper1.bib
- - ...
+     - ...
  - Chapters
      - 0_Abstract_Page.tex
      - 0_Acknowledgments.tex
