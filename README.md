@@ -53,7 +53,9 @@ There is one bibliography per paper and only the referred documents are displaye
 - **Bibliography style**    &rarr;   in the *packages.tex*
 - **Font type** &rarr; can be changed if using a different compiler
 
+## Download the repository
 
+- You can simply get the .zip folder of the repository
 
 
 
