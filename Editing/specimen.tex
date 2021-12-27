@@ -1,0 +1,54 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% IHEID-BASED FIRST PAGES %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%
+%%% TITLEPAGES %%%
+%%%%%%%%%%%%%%%%%%
+%%% TITLEPAGE 1 %%%
+\begin{titlepage}
+    \begin{tikzpicture}[remember picture,overlay] % put the logo on the top-left corner
+    \node[anchor=north west,yshift=80pt,xshift=-80pt]        {\includegraphics[width=0.5\textwidth]{Editing/logo.png}};
+    \end{tikzpicture}
+    \maketitle
+    \vspace{1cm}
+    \centering\sffamily{Thesis N$^{\circ}$ \ThesisNumber}     \\[0.5\baselineskip] 
+    \vspace{1cm}
+    \centering\sffamily\textbf{\City}                         \\[0.5\baselineskip]
+    \vspace{1cm}
+    \centering\sffamily\textbf{\YearRegistration}
+\end{titlepage}
+%%% TITLEPAGE 2 %%% (empty page)
+\newpage\null\thispagestyle{empty}\newpage
+%%% TITLEPAGE 3 %%%
+\begin{titlepage}
+    \vspace*{5cm}
+    \centering\Large\sffamily\textbf{\MyTitle}
+    \vspace*{10cm} \\
+    \large\raisebox{0.1em}{\textcopyright} \sffamily\textbf{\YearRegistration} \hspace{1em} \sffamily \textbf{\MyName \MySurname}
+\end{titlepage}
+%%% TITLEPAGE 4 %%%
+\begin{titlepage}
+    \begin{adjustwidth}{-20pt}{-20pt}
+        \begin{center}
+            \sffamily{
+            INSTITUT DE HAUTES ETUDES INTERNATIONALES ET DU DEVELOPPEMENT   \\[0.5\baselineskip]
+            GRADUATE INSTITUTE OF INTERNATIONAL AND DEVELOPMENT STUDIES      }   
+        \end{center}
+    \end{adjustwidth}           
+    \vspace{-1cm}
+    \maketitle
+    \vspace{1cm}
+    \centering\sffamily{Thesis N$^{\circ}$\ThesisNumber}  \\[0.5\baselineskip] 
+    \vspace{1cm}
+    \centering\sffamily\textbf{\City}                     \\[0.5\baselineskip]
+    \vspace{1cm}
+    \centering\sffamily\textbf{\YearRegistration}
+\end{titlepage}
+%%% TITLEPAGE 5 %%%
+\includepdf[pages={1}]{IMPRIMATUR.pdf}
+%%% TITLEPAGE 6 %%%
+\begin{titlepage}   
+
+\end{titlepage}
