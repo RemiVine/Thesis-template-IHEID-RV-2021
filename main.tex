@@ -1,217 +1,36 @@
 \documentclass[11pt, notitlepage,preprint]{report}   % [put font size 10-11-12]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%% put packages required all over the thesis %%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[utf8]{inputenc}
-
-%%%% EDITING OF PAGE FRAME %%%%
-%\usepackage{showframe}          %This line can be used to clearly show the new margins
-
-%\usepackage{a4wide}            % Unblock this package if you prefer the text to be wider on the page (more MS-like)
-\usepackage{geometry}
-\newgeometry{vmargin={35mm}, hmargin={30mm,29mm}}   % set the margins (in a book format, it is useful not to shrink too much the margins)
-\usepackage{changepage}         % useful to locally change margin (used in specimen)
-\usepackage{fancyhdr}           % useful for headers editing
-
-%%%% LINE, PARAGRAPH, IDENTATION %%%%
-\setlength{\parindent}{2em}             % indentation for § start
-\setlength{\parskip}{0.5em}             % paragraph spacing
-\renewcommand{\baselinestretch}{1}      % line spacing
-
-%%%% LANGUAGE %%%%
-\usepackage[english]{babel}
-\usepackage{dirtytalk}          % useful for quotation marks put in a causual way
-\usepackage{textgreek}      
-\usepackage{lipsum}
-
-%%%% OTHER SECONDARY EDITING 
-\usepackage{copyrightbox}       % useful for the page 3 of the specimen
-\usepackage{textcomp}           % useful for the gensymb package
-\usepackage{gensymb}            % required to put the "degree" symbol "°"C 
-\usepackage{lineno}             % useful in case the line number is required (for some reason)      \linenumbers
-\usepackage{epigraph}           % useful for quotation before chapter, etc.
-\renewcommand{\textflush}{flushepinormal} % justify epigraph
-\usepackage{pdflscape}          % useful to put landscape (e.g. for large tables)
-\usepackage{lscape}             % useful to put landscape (e.g. for large tables)
-\usepackage{wrapfig}            % useful some text wrapping around figures
-\usepackage{pdfpages}           % useful to include the imprimatur
-\usepackage{rotating}           % useful to rotate some content
-%\usepackage{fontspec}          % useful for some other font, e.g. Arial font, but need another LaTeX
-
-%%%% MORE CONTENT %%%%
-\usepackage{longtable}          % useful for long table, crossing pages
-\usepackage[flushleft]{threeparttable}
-\usepackage{multirow}           % useful for table editing
-\usepackage{subcaption}         % useful to edit table, figure, etc. captions
-\usepackage{booktabs,caption}   % useful for caption alignment
-\usepackage{graphicx}           % useful for inclusion of image and other content
-\usepackage{float}              % useful for positioning of content (e.g. of tables)
-\usepackage{etoolbox}           % useful if you use macro
-\usepackage{epstopdf}           % useful in case you need EPS to be encapsulated into PDF
-
-%%%% MATH SYMBOLS %%%%
-\usepackage{amssymb}            % useful mathematical symbols
-\usepackage{amsmath}            % useful mathematical symbols
-\usepackage{mathrsfs}           % useful for mathematical fonts
-\newcommand{\R}{\mathbb{R}}     % useful to give elegant letters
-\usepackage{chngcntr}           % useful in case a different counting of propositions, etc. is required
-
-%%%% Hyperreferencing %%%% 
-\usepackage{hyperref}           % useful for referencing outside the present document
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    citecolor=black     %blue,
-}
-
-%%%% APPENDICES %%%%
-%\usepackage{appendix}
-\usepackage[toc,page]{appendix}     % useful to have table of contents for appendix 
-\AtBeginEnvironment{subappendices}{ % needed to have correct appendices in each article 
-\chapter*{Appendix}
-\addcontentsline{toc}{chapter}{Appendices}
-\counterwithin{figure}{section}
-\counterwithin{table}{section}
-}
-
-%%%% BIBLIOGRAPHY %%%%
-\usepackage[sectionbib]{natbib}     % required to have one biblio per chapter
-\usepackage{chapterbib}             % required to have one biblio per chapter
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Define newcommand for your personnal information on the first pages %%%%%
-\newcommand{\MyTitle}{\# Essays in ... (or whatever title)} % 
-\newcommand{\ThesisNumber}{Thesis Number}                   % It will be given by the secretariat
-\newcommand{\ThesisMajor}{International Economics}          % Development Economics
-\newcommand{\YearRegistration}{\the\year}                     % In case you submit around the Winter Break, just make sure that this is correct   
-\newcommand{\City}{Geneva}  
-
-\newcommand{\MyName}{Name}                                  % You must use the name the institute registered you in
-\newcommand{\MySurname}{ \MakeUppercase{Surname}}           % note that the space before the "\MakeUppercase" command matters
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%% IHEID-BASED FIRST PAGES %%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Same frame for 1st and 3rd page
-\makeatletter
-\renewcommand\maketitle
-    {\vspace*{3cm} 
-    \begin{center}
-        \Large\sffamily\textbf{\MyTitle}                \\[5\baselineskip]
-        \large\sffamily\textbf{THESIS}                  \\[0\baselineskip] 
-        submitted at the Graduate Institute             \\[0\baselineskip] 
-        in fulfillment of the requirements of the       \\[0\baselineskip] 
-        PhD degree in \ThesisMajor                      \\[2\baselineskip]
-        \large\sffamily{by                              \\[2\baselineskip] 
-        \textbf{	\MyName 	\MySurname}
-        }
-        \bigskip                                        \\[0\baselineskip]
-    \end{center}
-    }
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Editing/packages}      % call for packages included in the packages.tex file
+\include{Editing/information_to_fill} % your own information filled in the information_to_fill.tex file
+\include{Editing/glossary}      % call for the glossary included in the glossary.tex file
+\makeglossaries                 % required to include glossary in the document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% TITLEPAGES %%%
-%%%%%%%%%%%%%%%%%
-%%% TITLEPAGE 1 %%%
-\begin{titlepage}
-    \begin{tikzpicture}[remember picture,overlay]           % put the logo on the top-left corner
-        \node[anchor=north west,yshift=-25pt,xshift=25pt]%
-        at (current page.north west)
-        {\includegraphics[width=0.5\textwidth]{logo.png}};
-    \end{tikzpicture}
-    \maketitle
-    \vspace{1cm}
-    \centering\sffamily{Thesis N$^{\circ}$ \ThesisNumber}     \\[0.5\baselineskip] 
-    \vspace{1cm}
-    \centering\sffamily\textbf{\City}                         \\[0.5\baselineskip]
-    \vspace{1cm}
-    \centering\sffamily\textbf{\YearRegistration}
-\end{titlepage}
-%%% TITLEPAGE 2 %%% (empty page)
-\newpage\null\thispagestyle{empty}\newpage
-%%% TITLEPAGE 3 %%%
-\begin{titlepage}
-    \vspace*{5cm}
-    \centering\Large\sffamily\textbf{\MyTitle}
-    \vspace*{10cm} \\
-    \large\raisebox{0.1em}{\textcopyright} \sffamily\textbf{\YearRegistration} \hspace{1em} \sffamily \textbf{\MyName \MySurname}
-\end{titlepage}
-%%% TITLEPAGE 4 %%%
-\begin{titlepage}
-    \begin{adjustwidth}{-20pt}{-20pt}
-        \begin{center}
-            \sffamily{
-            INSTITUT DE HAUTES ETUDES INTERNATIONALES ET DU DEVELOPPEMENT   \\[0.5\baselineskip]
-            GRADUATE INSTITUTE OF INTERNATIONAL AND DEVELOPMENT STUDIES      }   
-        \end{center}
-    \end{adjustwidth}           
-    \vspace{1cm}
-    \maketitle
-    \vspace{1cm}
-    \centering\sffamily{Thesis N$^{\circ}$\ThesisNumber}  \\[0.5\baselineskip] 
-    \vspace{1cm}
-    \centering\sffamily\textbf{\City}                     \\[0.5\baselineskip]
-    \vspace{1cm}
-    \centering\sffamily\textbf{\YearRegistration}
-\end{titlepage}
-%%% TITLEPAGE 5 %%%
-\includepdf[pages={1}]{IMPRIMATUR.pdf}
-%%% TITLEPAGE 6 %%%
-\begin{titlepage}   
-\pagenumbering{roman}       % use roman numbering for the first pages (outside the specimen, not counted)
-\setcounter{page}{0}        % start the roman page count after the 6 pages specimen 
+\include{Editing/specimen}      % IHEID-specific specimen (except for the last page, the abstract, that must be filled)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{roman}           % use roman numbering for the first pages (outside the specimen, not counted)
+\setcounter{page}{0}            % start the roman page count after the 6 pages specimen 
+\include{Chapters/0_Abstract_Page}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{Chapters/Abstract_Page}
+\include{Chapters/0_pre_thesis_quote_dedication_etc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   
+\include{Chapters/0_Acknowledgments}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLE LISTS OF THE WHOLE THESIS (mute the ones you do not want to include)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents                                   % table of contents
+\listoffigures                                     % list of figures           
+\listoftables                                      % list of tables
+\printglossary[type=\acronymtype,title=Acronyms]   % list of used acronyms (requires to refer to them in the papers)
 %%%%%%%%%%%%%%%%%
 % END TITLE PAGES
 %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%
-% MAIN CONTENT   %\maketitle
-%%%%%%%%%%%%%%%%%
+% MAIN CONTENT  
 %%%%%%%%%%%%%%%%%
 \newpage
-\vspace*{6cm}
-\setlength\epigraphwidth{10cm}
-\setlength\epigraphrule{0pt}
-          \begin{flushright}
-\textit{Quote, if willing to!} \\[0.5\baselineskip]
-\textbf{\textit{Author}}
-          \end{flushright}  
-%%
-\newpage
-\vspace*{6cm}
-\setlength\epigraphwidth{10cm}
-\setlength\epigraphrule{0pt}
-          \begin{flushright}
-\textit{I dedicate this thesis to the golden shrimp.} \\[0.5\baselineskip]
-          \end{flushright}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{Chapters/Acknowledgments}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\tableofcontents
-%\listoffigures         % list of figures           
-%\listoftables          % list of tables
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{titlepage}
 \pagenumbering{arabic}      % put back the arabic numbering
 \setcounter{page}{1}        % start the main page count after the table(s) of contents, quotes, etc.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

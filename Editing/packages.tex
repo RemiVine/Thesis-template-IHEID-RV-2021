@@ -1,0 +1,102 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% put packages required all over the thesis %%%%%%% --> include here the ones you need
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+
+%%%% EDITING OF PAGE FRAME %%%%
+%\usepackage{showframe}         %This line can be used to clearly show the new margins
+
+%\usepackage{a4wide}            % Unblock this package if you prefer the text to be wider on the page (more MS-like)
+\usepackage{geometry}           % useful for margins setting
+\newgeometry{vmargin={35mm}, hmargin={30mm,29mm}}   % set the margins (in a book format, it is useful not to shrink too much the margins)
+\usepackage{changepage}         % useful to locally change margin (used in specimen)
+\usepackage{fancyhdr}           % useful for headers editing
+
+%%%% LINE, PARAGRAPH, IDENTATION %%%%
+\setlength{\parindent}{2em}             % indentation for § start
+\setlength{\parskip}{0.5em}             % paragraph spacing
+\renewcommand{\baselinestretch}{1}      % line spacing
+
+%%%% LANGUAGE %%%%
+\usepackage[english]{babel}
+\usepackage{dirtytalk}          % useful for quotation marks put in a causual way
+\usepackage{textgreek}      
+\usepackage{lipsum}
+
+%%%% OTHER SECONDARY EDITING 
+\usepackage{copyrightbox}       % useful for the page 3 of the specimen
+\usepackage{textcomp}           % useful for the gensymb package
+\usepackage{gensymb}            % required to put the "degree" symbol "°"C 
+\usepackage{lineno}             % useful in case the line number is required (for some reason)      \linenumbers
+\usepackage{tikz}
+\usepackage{epigraph}           % useful for quotation before chapter, etc.
+\renewcommand{\textflush}{flushepinormal} % justify epigraph
+\usepackage{pdflscape}          % useful to put landscape (e.g. for large tables)
+\usepackage{lscape}             % useful to put landscape (e.g. for large tables)
+\usepackage{wrapfig}            % useful some text wrapping around figures
+\usepackage{pdfpages}           % useful to include the imprimatur
+\usepackage{rotating}           % useful to rotate some content
+%\usepackage{fontspec}          % useful for some other font, e.g. Arial font, but need another LaTeX
+
+%%%% MORE CONTENT %%%%
+\usepackage{longtable}          % useful for long table, crossing pages
+\usepackage[flushleft]{threeparttable}
+\usepackage{multirow}           % useful for table editing
+\usepackage{subcaption}         % useful to edit table, figure, etc. captions
+\usepackage{booktabs,caption}   % useful for caption alignment
+\usepackage{graphicx}           % useful for inclusion of image and other content
+\usepackage{float}              % useful for positioning of content (e.g. of tables)
+\usepackage{etoolbox}           % useful if you use macro
+\usepackage{epstopdf}           % useful in case you need EPS to be encapsulated into PDF
+
+%%%% MATH SYMBOLS %%%%
+\usepackage{amssymb}            % useful mathematical symbols
+\usepackage{amsmath}            % useful mathematical symbols
+\usepackage{mathrsfs}           % useful for mathematical fonts
+\newcommand{\R}{\mathbb{R}}     % useful to give elegant letters
+\usepackage{chngcntr}           % useful in case a different counting of propositions, etc. is required
+
+%%%% ACRONYMS %%%% 
+\usepackage[xindy,nonumberlist]{glossaries}  % useful for acronyms (no glossary)
+
+%%%% Hyperreferencing %%%% 
+\usepackage{hyperref}           % useful for referencing outside the present document
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=black     %blue,
+}
+
+%%%% APPENDICES %%%%
+%\usepackage{appendix}
+\usepackage[toc,page]{appendix}     % useful to have table of contents for appendix 
+\AtBeginEnvironment{subappendices}{ % needed to have correct appendices in each article 
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendices}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+}
+
+%%%% BIBLIOGRAPHY %%%%
+\usepackage[sectionbib]{natbib}     % required to have one biblio per chapter
+\usepackage{chapterbib}             % required to have one biblio per chapter
+\newcommand{\stylechoice}{chicago}   % choose the style of bibliographies (list: https://gking.harvard.edu/files/natnotes2.pdf  --> apalike, chicago, etc.) 
+
+%%%% New command for thesis specimen %%%%
+\renewcommand\maketitle
+    {\vspace*{5cm} 
+    \begin{center}
+        \Large\sffamily\textbf{\MyTitle}                \\[5\baselineskip]
+        \large\sffamily\textbf{THESIS}                  \\[0\baselineskip] 
+        submitted at the Graduate Institute             \\[0\baselineskip] 
+        in fulfillment of the requirements of the       \\[0\baselineskip] 
+        PhD degree in \ThesisMajor                      \\[2\baselineskip]
+        \large\sffamily{by                              \\[2\baselineskip] 
+        \textbf{	\MyName 	\MySurname}
+        }
+        \bigskip                                        \\[0\baselineskip]
+    \end{center}
+    }
