@@ -38,7 +38,7 @@ Every chapter contains its own appendix. The appendix must be put within *\begin
  
  ## Some changes to be done
  
-- Personnal information
+- Personnal information, discipline, *etc.* 
    - *information_to_fill.tex* contains all the personnal information that should be changed for the specimen 
    - make sure the year is the correct one (if pre-defense and post-defense submissions at different years)
  
