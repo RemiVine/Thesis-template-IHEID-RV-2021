@@ -1,16 +1,15 @@
 # Thesis-template-IHEID, some information
-This is a LaTeX template for paper-based IHEID thesis. I built it using *overleaf*, I am not sure it works directly on other LaTeX.
+This is a LaTeX template for paper-based IHEID thesis. I built it using *overleaf*, I am not sure it works directly on other LaTeX editors.
 
-The template allows to have a thesis with independent chapters, containing their own appendices and bibliographies. On the other hand, it is meant to have sections, figures, etc. numbered as part of a consistent document. 
+The template allows to have a thesis with independent chapters, containing their own appendices and bibliographies. On the other hand, it is meant to have sections, figures, etc. numbered as part of a consistent document, so  that there is no multiple sections, tables, figures, etc., labelled similarly. 
 
 The use of this template shall be rather intuitive. The folder "Chapter" is meant to include the main.tex document, one by one, of your thesis. The respective bibliographies are to be inserted in the "Bibliography" folder.
 
-There is one bibliography per paper and only the referred documents are displayed in the bibliography. I chose the "Chicago" style, you can change that in the "BIBLIOGRAHPY" part of the "packages.tex" file (the *ad hoc* *\stylechoice* command).
+There is one bibliography per paper and only the cited references are displayed in the bibliography. I chose the "Chicago" style, you can change that in the "BIBLIOGRAHPY" part of the "packages.tex" file (the *ad hoc* *\stylechoice* command).
 
 :warning:          Every chapter contains its own appendix. The appendix for each paper must be put within *\begin{subappendices}* ... *\end{subappendices}*
 
 ## The folder contains:
- 
  
  - **Bibliographies**
      - *preamble.bib*
@@ -22,7 +21,7 @@ There is one bibliography per paper and only the referred documents are displaye
      - *0_pre_thesis_quote_dedication_etc.tex*    &rarr;   *optional*
      - *Paper1.tex*
      - *...*
-     - *Preamble.tex*
+     - *Preamble.tex*      &rarr; useful to put your thesis introduction
 - **Editing**
      - *specimen.tex*    &rarr; IHEID-specific template for the first 6 pages
      - *glossary.tex*    &rarr; can be used for listing abbreviations (or to do a glossary, more on the file) 
@@ -55,14 +54,14 @@ There is one bibliography per paper and only the referred documents are displaye
 
 ## Side note: use this template for the MPT
 
-As such, the template can also be easily used for the MPT if you intend to have several papers included in one whole framework. You can simply mute the *\include{specimen}* command in the *main.tex* file. You might probably seek to also mute the *0_pre_thesis_quote_dedication_etc.tex* and the *0_Acknowledgments.tex* files. The *0_Abstract_Page.tex* can be slightly tweaked if you need to prepare a quick introduction of your MPT.
+As such, the template can also be easily used for the MPT if you intend to have several papers included in one whole framework. You can simply mute the *\include{specimen}* command in the *main.tex* file. You might probably seek to also mute the *0_pre_thesis_quote_dedication_etc.tex*, the *0_Abstract_Page.tex*, and the *0_Acknowledgments.tex* files. The *Preamble* file can be slightly tweaked if you need to prepare a quick introduction of your MPT.
 
 ## Download the repository
 
 - You can simply get the .zip folder of the repository
 
 
-:fried_shrimp:
+:fried_shrimp:   :fried_shrimp:   
 
 
 
