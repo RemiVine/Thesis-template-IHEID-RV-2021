@@ -53,6 +53,10 @@ There is one bibliography per paper and only the referred documents are displaye
 - **Bibliography style**    &rarr;   in the *packages.tex*
 - **Font type** &rarr; can be changed if using a different compiler
 
+## Side note: use this template for the MPT
+
+As such, the template can also be easily used for the MPT if you intend to have several papers included in one whole framework. You can simply mute the *\include{specimen}* command in the *main.tex* file. You might probably seek to also mute the *0_pre_thesis_quote_dedication_etc.tex* and the *0_Acknowledgments.tex* files. The *0_Abstract_Page.tex* can be slightly tweaked if you need to prepare a quick introduction of your MPT.
+
 ## Download the repository
 
 - You can simply get the .zip folder of the repository
