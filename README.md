@@ -1,4 +1,4 @@
-# Thesis-template-IHEID
+# Thesis-template-IHEID, some information
 This is a LaTeX template for paper-based IHEID thesis. I built it using *overleaf*, I am not sure it works directly on other LaTeX.
 
 The template allows to have a thesis with independent chapters, containing their own appendices and bibliographies. On the other hand, it is meant to have sections, figures, etc. numbered as part of a consistent document. 
