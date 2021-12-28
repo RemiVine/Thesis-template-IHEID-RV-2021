@@ -36,7 +36,7 @@ There is one bibliography per paper and only the referred documents are displaye
 - **main.tex** 
  
  
- ## Some changes to be done
+ ## :exclamation: Some changes to be done
  
 - **Personnal information, discipline, *etc.*** 
    - *information_to_fill.tex* contains all the personnal information that should be changed for the specimen 
@@ -44,7 +44,7 @@ There is one bibliography per paper and only the referred documents are displaye
    - the thesis number will be given by the administration
    - the imprimatur will be given by the administration after the defense
  
- ## Changes that can be done 
+ ## Changes that can be (quickly) done 
 
 - **Font size**  &rarr;   directly in the *main.tex*
 - **Include or not** table of contents, list of figures, list of tables, list of abbreviations    &rarr;   directly in the *main.tex* 
@@ -61,6 +61,8 @@ As such, the template can also be easily used for the MPT if you intend to have 
 
 - You can simply get the .zip folder of the repository
 
+
+:fried_shrimp:
 
 
 
