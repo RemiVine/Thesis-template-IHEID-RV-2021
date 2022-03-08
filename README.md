@@ -1,6 +1,9 @@
 # Thesis-template-IHEID, some information
 This is a LaTeX template for paper-based IHEID thesis. I built it using *overleaf*, I am not sure it works directly on other LaTeX editors.
 
+The thesis rules of the IHEID are available [here](https://www.graduateinstitute.ch/sites/internet/files/2019-07/PhD_Thesis_Instruction_final_deposit.pdf)
+. 
+
 The template allows to have a thesis with independent chapters, containing their own appendices and bibliographies. On the other hand, it is meant to have sections, figures, etc. numbered as part of a consistent document, so  that there is no multiple sections, tables, figures, etc., labelled similarly. 
 
 The use of this template shall be rather intuitive. The folder "Chapter" is meant to include the main.tex document, one by one, of your thesis. The respective bibliographies are to be inserted in the "Bibliography" folder.
