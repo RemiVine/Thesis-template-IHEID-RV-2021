@@ -8,47 +8,66 @@
 %%%%%%%%%%%%%%%%%%
 %%% TITLEPAGE 1 %%%
 \begin{titlepage}
-    \begin{tikzpicture}[remember picture,overlay] % put the logo on the top-left corner
-    \node[anchor=north west,yshift=80pt,xshift=-80pt]        {\includegraphics[width=0.5\textwidth]{Editing/logo.png}};
+    \begin{tikzpicture}[remember picture,overlay]           % put the logo on the top-left corner
+    \node[anchor=north west,yshift=3cm,xshift=-3cm]        {\includegraphics[width=6cm]{Editing/logo_new_complete.png}};
     \end{tikzpicture}
     \maketitle
     \vspace{1cm}
-    \centering\sffamily{Thesis N$^{\circ}$ \ThesisNumber}     \\[0.5\baselineskip] 
+    \begin{center}
+    \begingroup \fontsize{13}{14}\sffamily{Thesis N$^{\circ}$ \ThesisNumber} \endgroup            \\[0\baselineskip] 
     \vspace{1cm}
-    \centering\sffamily\textbf{\City}                         \\[0.5\baselineskip]
+    \begingroup \fontsize{13}{14}\sffamily\textbf{\City}              \endgroup                   \\[0\baselineskip]
     \vspace{1cm}
-    \centering\sffamily\textbf{\YearRegistration}
+    \begingroup \fontsize{13}{14}\sffamily\textbf{\YearRegistration}  \endgroup
+    \end{center}
 \end{titlepage}
 %%% TITLEPAGE 2 %%% (empty page)
+\newpage\null\thispagestyle{empty}\newpage
+\newpage\null\thispagestyle{empty}\newpage
 \newpage\null\thispagestyle{empty}\newpage
 %%% TITLEPAGE 3 %%%
 \begin{titlepage}
     \vspace*{5cm}
-    \centering\Large\sffamily\textbf{\MyTitle}
-    \vspace*{10cm} \\
-    \large\raisebox{0.1em}{\textcopyright} \sffamily\textbf{\YearRegistration} \hspace{1em} \sffamily \textbf{\MyName \MySurname}
+    \fontsize{14}{14}\centering\sffamily\textbf{\MyTitle}
+    \vspace*{12cm} \\
+    \fontsize{13}{14}\raisebox{0.1em}{\textcopyright} \sffamily\textbf{\YearRegistration} \hspace{1em} \sffamily \textbf{\MyName \MySurname}
 \end{titlepage}
+\newpage\null\thispagestyle{empty}\newpage
 %%% TITLEPAGE 4 %%%
 \begin{titlepage}
-    \begin{adjustwidth}{-20pt}{-20pt}
+    \vspace*{-2cm}
+    \begin{adjustwidth}{-2cm}{-2cm}
         \begin{center}
-            \sffamily{
-            INSTITUT DE HAUTES ETUDES INTERNATIONALES ET DU DEVELOPPEMENT   \\[0.5\baselineskip]
-            GRADUATE INSTITUTE OF INTERNATIONAL AND DEVELOPMENT STUDIES      }   
+            \begingroup \fontsize{12}{14}\sffamily{
+            INSTITUT DE HAUTES ETUDES INTERNATIONALES ET DU DEVELOPPEMENT                       \\[0\baselineskip]
+            GRADUATE INSTITUTE OF INTERNATIONAL AND DEVELOPMENT STUDIES      }   \endgroup
         \end{center}
     \end{adjustwidth}           
     \vspace{-1cm}
     \maketitle
     \vspace{1cm}
-    \centering\sffamily{Thesis N$^{\circ}$\ThesisNumber}  \\[0.5\baselineskip] 
+    \begin{center}
+     \begingroup \fontsize{13}{14}\sffamily{Thesis N$^{\circ}$\ThesisNumber}  \endgroup         \\[0\baselineskip] 
     \vspace{1cm}
-    \centering\sffamily\textbf{\City}                     \\[0.5\baselineskip]
+    \begingroup \fontsize{13}{14}\sffamily\textbf{\City}      \endgroup                         \\[0\baselineskip]
     \vspace{1cm}
-    \centering\sffamily\textbf{\YearRegistration}
+    \begingroup \fontsize{13}{14}\sffamily\textbf{\YearRegistration} \endgroup
+    \end{center}
 \end{titlepage}
+\newpage\null\thispagestyle{empty}\newpage
 %%% TITLEPAGE 5 %%%
 \includepdf[pages={1}]{IMPRIMATUR.pdf}
+\newpage\null\thispagestyle{empty}\newpage
 %%% TITLEPAGE 6 %%%
 \begin{titlepage}   
 
 \end{titlepage}
+
+
+
+
+
+
+ 
+
+

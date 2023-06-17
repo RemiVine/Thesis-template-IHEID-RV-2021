@@ -38,7 +38,7 @@ There is one bibliography per paper and only the cited references are displayed 
  ## :exclamation: Some changes to be done
  
 - **Personnal information, discipline, *etc.*** 
-   - *information_to_fill.tex* contains all the personnal information that should be changed for the specimen 
+   - *information_to_fill.tex* contains all the personal information that should be changed for the specimen 
    - make sure the year is the correct one (if pre-defense and post-defense submissions at different years)
    - the thesis number will be given by the administration
    - the imprimatur will be given by the administration after the defense
