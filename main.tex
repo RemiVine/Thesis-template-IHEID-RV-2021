@@ -1,4 +1,4 @@
-\documentclass[11pt, notitlepage,preprint]{report}   % [put font size 10-11-12]
+\documentclass[11pt, notitlepage,preprint]{report}   % [put font size 10-11-12 pt]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{Editing/packages}      % call for packages included in the packages.tex file
 \include{Editing/information_to_fill} % your own information filled in the information_to_fill.tex file
@@ -12,8 +12,9 @@
 \include{Editing/specimen}      % IHEID-specific specimen (except for the last page, the abstract, that must be filled)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagenumbering{roman}           % use roman numbering for the first pages (outside the specimen, not counted)
-\setcounter{page}{0}            % start the roman page count after the 6 pages specimen 
+\setcounter{page}{-1}            % start the roman page count after the 6 pages specimen (including the abstract and the blank page that follows)
 \include{Chapters/0_Abstract_Page}
+\newpage\null\thispagestyle{empty}\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{Chapters/0_pre_thesis_quote_dedication_etc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,4 +1,3 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% put packages required all over the thesis %%%%%%% --> include here the ones you need
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -9,7 +8,7 @@
 
 %\usepackage{a4wide}            % Unblock this package if you prefer the text to be wider on the page (more MS-like)
 \usepackage{geometry}           % useful for margins setting
-\newgeometry{vmargin={35mm}, hmargin={30mm,29mm}}   % set the margins (in a book format, it is useful not to shrink too much the margins)
+\newgeometry{vmargin={35mm}, hmargin={30mm,30mm}}   % set the margins (in a book format, it is useful not to shrink too much the margins)
 \usepackage{changepage}         % useful to locally change margin (used in specimen)
 \usepackage{fancyhdr}           % useful for headers editing
 
@@ -20,7 +19,7 @@
 
 %%%% LANGUAGE %%%%
 \usepackage[english]{babel}
-\usepackage{dirtytalk}          % useful for quotation marks put in a causual way
+\usepackage{dirtytalk}          % useful for quotation marks put in a casual way
 \usepackage{textgreek}      
 \usepackage{lipsum}
 
@@ -29,7 +28,7 @@
 \usepackage{textcomp}           % useful for the gensymb package
 \usepackage{gensymb}            % required to put the "degree" symbol "°"C 
 \usepackage{lineno}             % useful in case the line number is required (for some reason)      \linenumbers
-\usepackage{tikz}
+\usepackage{tikz}               % useful to include flexible pictures/figures, etc.
 \usepackage{epigraph}           % useful for quotation before chapter, etc.
 \renewcommand{\textflush}{flushepinormal} % justify epigraph
 \usepackage{pdflscape}          % useful to put landscape (e.g. for large tables)
@@ -85,18 +84,30 @@
 \usepackage{chapterbib}             % required to have one biblio per chapter
 \newcommand{\stylechoice}{chicago}   % choose the style of bibliographies (list: https://gking.harvard.edu/files/natnotes2.pdf  --> apalike, chicago, etc.) 
 
+
+%%%%%%%%%%%%%%%%%%%%%
+%%% DO NOT CHANGE %%%
+%%%%%%%%%%%%%%%%%%%%%
+
 %%%% New command for thesis specimen %%%%
 \renewcommand\maketitle
-    {\vspace*{5cm} 
+    {\vspace{5cm} 
     \begin{center}
-        \Large\sffamily\textbf{\MyTitle}                \\[5\baselineskip]
-        \large\sffamily\textbf{THESIS}                  \\[0\baselineskip] 
-        submitted at the Graduate Institute             \\[0\baselineskip] 
-        in fulfillment of the requirements of the       \\[0\baselineskip] 
-        PhD degree in \ThesisMajor                      \\[2\baselineskip]
-        \large\sffamily{by                              \\[2\baselineskip] 
-        \textbf{	\MyName 	\MySurname}
-        }
-        \bigskip                                        \\[0\baselineskip]
+        \begingroup \fontsize{14}{14}\sffamily\textbf{\MyTitle}  \endgroup      \\[0\baselineskip] 
+        \vspace{3cm} 
+        \begingroup \fontsize{13}{14}\sffamily\textbf{THESIS}                   \\[0\baselineskip]
+        \vspace{0cm} 
+        submitted at the Graduate Institute                                     \\[0\baselineskip] 
+        \vspace{0cm} 
+        in fulfillment of the requirements of the                               \\[0\baselineskip] 
+        \vspace{0cm} 
+        PhD degree in \ThesisMajor     \endgroup                                \\[0\baselineskip]  
+        \vspace{1cm}         
+        \begingroup \fontsize{13}{14}\sffamily{by                               \\[0\baselineskip] 
+        \vspace{1cm}         
+        \textbf{	\MyName 	\MySurname}                                     \\[0\baselineskip]  
+        }                                                       \endgroup
     \end{center}
-    }
+    } 
+%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%
